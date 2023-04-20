@@ -14,6 +14,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 /// @description :键值对存储
 class SpUtil {
 
+  ///定义了一个类，通过Get & SharedPreferences来做键值对存储，并没有采用单例。
 
   ///更新用户信息，需要保存密码
   ///[userInfo] 用户信息

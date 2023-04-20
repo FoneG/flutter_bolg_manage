@@ -34,7 +34,23 @@ import 'package:get/get.dart';
 /// @class : Routes
 /// @name : jhf
 /// @description :页面管理
+
+///当未指明其父类的时候, 默认是继承自Object的
+///在Dart中抽象类是使用abstract声明的类
+///在Dart中我们使用static关键字来定义类成员和类方法
+/*
+在Dart中抽象类是使用abstract声明的类
+在Dart中没有具体实现的方法(没有方法体)，就是抽象方法
+抽象方法，必须存在于抽象类中, 抽象类不能实例化
+抽象类中的抽象方法必须被子类实现, 抽象类中的已经被实现方法, 可以不被子类重写
+
+作者：TitanCoder
+链接：https://www.jianshu.com/p/38c552d8ad72
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+ */
 abstract class Routes {
+
   ///入口模块
   static const String splashPage = '/splash';
 
@@ -88,19 +104,23 @@ abstract class Routes {
     GetPage(
         name: splashPage,
         page: () => const SplashPage(),
-        binding: SplashBinding()),
+        binding: SplashBinding()
+    ),
     GetPage(
         name: registerPage,
         page: () => const RegisterPage(),
-        binding: RegisterBinding()),
+        binding: RegisterBinding()
+    ),
     GetPage(
         name: webViewPage,
         page: () => const WebViewPage(),
-        binding: WebViewBinding()),
+        binding: WebViewBinding()
+    ),
     GetPage(
         name: homePage,
         page: () => const HomePage(),
-        binding: HomeBinding()),
+        binding: HomeBinding()
+    ),
     GetPage(
         name: feedbackPage,
         page: () =>  const FeedbackPage(),

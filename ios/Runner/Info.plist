@@ -45,5 +45,9 @@
     <string>YES</string>
     <key>NSPhotoLibraryUsageDescription</key>
     <string>需要您的同意,APP才能访问相册</string>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
 </dict>
 </plist>

@@ -17,6 +17,7 @@ const secondaryDarkColor = Color(0xff000000);
 // const primaryTextColor = Color(0xFFF1E6FF);
 // const secondaryTextColor = Color(0xFFF1E6FF);
 
+/*应该是属于一种定义常量方法的方式*/
 ThemeData get appThemeData => ThemeData(
     primaryColor: kPrimaryColor,
     primaryColorLight: kPrimaryLightColor,
