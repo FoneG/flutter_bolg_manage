@@ -119,7 +119,7 @@ abstract class Routes {
     GetPage(
         name: homePage,
         page: () => const HomePage(),
-        binding: HomeBinding()
+        binding: HomeBinding()  ///属于普通路由，只能导入一个binding
     ),
     GetPage(
         name: feedbackPage,
@@ -152,6 +152,7 @@ abstract class Routes {
     GetPage(
         name: settingLanguagePage,
         page: () => const SettingLanguagePage(),
+        transition:Transition.rightToLeft,
     ),
     GetPage(
         name: collectPage,

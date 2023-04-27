@@ -23,7 +23,7 @@ class ProjectPage extends GetSaveView<ProjectController> {
             shrinkWrap: true,
             itemCount: controller.projectData.length,
             itemBuilder: (BuildContext context, int index) {
-              return ProjectListItem(
+              return ProjectListItem( ///定义一个cell
                   controller.projectData[index],
                   (value){
                     controller.projectData[index].collect = value;

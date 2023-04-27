@@ -22,7 +22,7 @@ class ProjectListItem extends StatelessWidget {
     this.detail,
     this.onResult, {
     Key? key,
-  }) : super(key: key);
+  }) : super(key: key); ///如果我们没有手动指定 key 参数，Flutter 会自动生成一个默认的 key。默认的 key 是基于 widget 的 runtimeType 和 widget 的哈希值计算出来的，通常情况下，这样的 key 能够保证唯一性。
 
   @override
   Widget build(BuildContext context) {
@@ -31,17 +31,17 @@ class ProjectListItem extends StatelessWidget {
       child: Container(
         width: double.infinity,
         margin: const EdgeInsets.symmetric(horizontal: 10),
-        decoration: const BoxDecoration(
-            color: Colors.white,
+        decoration: const BoxDecoration(///背景装饰器
+            color: Colors.red,
             border: Border(
                 bottom:
                     BorderSide(width: 0.5, color: ColorStyle.color_EFF1F8))),
         padding: const EdgeInsets.all(8.0),
-        child: Row(
+        child: Row( ///Row可以沿水平方向排列其子widget
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
-              child: Column(
+              child: Column( ///Column可以在垂直方向排列其子组件
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   ///标题
@@ -51,7 +51,7 @@ class ProjectListItem extends StatelessWidget {
                     maxLines: 2,
                     style: Styles.style_black_16_bold,
                   ),
-                  Box.vBox10,
+                  Box.vBox10, ///间距Box
                   ///部分内容
                   Text(
                     detail.desc,

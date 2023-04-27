@@ -3,6 +3,7 @@ import 'package:blog/res/strings.dart';
 import 'package:blog/res/style.dart';
 import 'package:blog/routes/routes.dart';
 import 'package:blog/ui/page/user_module/setting_page/setting_controller.dart';
+import 'package:blog/ui/page/user_module/setting_page/widget/setting_language_page.dart';
 import 'package:blog/widget/_toolbar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -26,7 +27,15 @@ class SettingPage extends GetCommonView<SettingController> {
             ),
             DividerStyle.divider1Half,
             ListTile(
-              onTap: () => Get.toNamed(Routes.settingLanguagePage),
+              ///通过MaterialPageRoute来实现iOS/Andriod上的跳转特效
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SettingLanguagePage(),
+                ),
+              ),
+                  // MaterialPageRoute(builder: SettingLanguagePage()),
+                  // Get.toNamed(Routes.settingLanguagePage),
               title: Text(StringStyles.settingLanguage.tr),
               trailing: const Icon(Icons.keyboard_arrow_right),
             ),

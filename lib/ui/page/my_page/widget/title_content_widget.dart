@@ -26,6 +26,9 @@ class TitleContentWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 20),
+      ///InkWell 是一个响应触摸的组件，它可以在被点击时出现“水波纹”效果，并触发相应的回调函数。
+      ///在 InkWell 内部，它会包裹一个子组件，当触摸事件发生时，它会根据触摸的位置生成一个“水波纹”效果，并调用回调函数执行相应的操作。
+      ///主要是为了以便于提高用户的交互体验
       child: InkWell(
         onTap: onTap,
         child:  Column(

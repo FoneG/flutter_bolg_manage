@@ -24,6 +24,8 @@ ThemeData get appThemeData => ThemeData(
     scaffoldBackgroundColor: Colors.white,
     accentColor: kPrimaryColor,
     appBarTheme: appBarTheme,
-    textTheme: const TextTheme());
+    textTheme: const TextTheme(),
+    platform: TargetPlatform.iOS,
+);
 
 AppBarTheme get appBarTheme => const AppBarTheme();

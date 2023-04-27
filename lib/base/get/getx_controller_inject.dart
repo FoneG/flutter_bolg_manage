@@ -9,6 +9,7 @@ import 'package:pull_to_refresh/pull_to_refresh.dart';
 /// @description :基类 Controller
 class BaseGetController extends GetxController{
 
+  //GetxController主要的作用是用于UI代码与业务逻辑分离开来。
 
   ///HTTP请求仓库
   late RequestRepository request;

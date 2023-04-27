@@ -53,6 +53,7 @@ class HomeTabOptionsState extends State<HomePage>
     tabController = TabController(length: 3, vsync: this);
     WidgetsBinding.instance?.addObserver(this);
 
+
     ///监听TabBar切换事件
     tabController?.addListener(() {
       var index = tabController?.index;

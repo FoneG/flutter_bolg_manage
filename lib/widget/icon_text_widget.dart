@@ -41,6 +41,7 @@ class IconTitleWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ///Material是一种特殊的widget，它提供了一个视觉设计的基础
     return Material(
       color: Colors.transparent,
       child:  InkWell(
@@ -50,8 +51,9 @@ class IconTitleWidget extends StatelessWidget {
           margin: const EdgeInsets.only(left: 16),
           padding: const EdgeInsets.symmetric(vertical: 20),
           width: double.infinity,
+          /// 这段代码使用了 Stack 组件来将三个 Positioned 组件叠加在一起。Stack 组件可以让其子组件按照指定的顺序叠加显示，类似于图层的概念.
           child: Stack(
-            alignment: AlignmentDirectional.centerStart,
+          alignment: AlignmentDirectional.centerStart,
             children: [
               Positioned(
                 child: Icon(
