@@ -49,7 +49,7 @@ void main()  async{
     ///国际化支持-备用语言
     fallbackLocale: const Locale('en', 'US'),
     ///动画组件
-    defaultTransition: Transition.fade,
+    defaultTransition: Transition.cupertino,
     initialBinding: SplashBinding(),
     home:  const SplashPage(),
   ));
